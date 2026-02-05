@@ -42,31 +42,33 @@ pt: In CSS, pt stands for points, one point is equal to 1/72 of an inch. PT is a
 
 </textarea>
     <h2> em and rem</h2>
-    <textarea cols="100" rows="10">
+    <textarea cols="100" rows="20">
 em: In CSS, em is relative to the font size of the element’s parent when used for font-size, and relative to the element’s own font size for other properties. This means nested elements can compound sizes, leading to unexpected scaling if not managed carefully.
         Example: <style>
-.parent {
-font-size: 20px;
-}
-.child {
-font-size: 2em; /* 2 * 20px = 40px */
-}
-</style>
-<div class="parent">
-Parent Text
-<div class="child">Child Text</div>
-</div>
+        .parent {
+        font-size: 20px;
+        }
+        .child {
+        font-size: 2em; /* 2 * 20px = 40px */
+        }
+        </style>
+        <div class="parent">
+        Parent Text
+        <div class="child">Child Text</div>
+        </div>
 The child inherits the parent's font-size of 20px and multiplies it by 2, so the font-size will be 40px.
+
+
 rem: In CSS, rem stands for root em and is relative to the font size of the root element (<html>). It provides consistent sizing across the document, unaffected by nesting.
     Example: <style>
- html {
+    html {
    font-size: 16px;
- }
- .child {
+    }
+    .child {
    font-size: 2rem; /* 2 * 16px = 32px */
- }
-</style>
-<div class="child">Child Text</div>
+    }
+    </style>
+    <div class="child">Child Text</div>
 The child's font-size will always be 32px regardless of the parent's font size.
 </textarea>
 </body>

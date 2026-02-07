@@ -68,3 +68,15 @@ grid-template-areas:
 }
 
 #secondLayout #titleRow{ grid-area:title;}
+#secondLayout #para1 {grid-area:p1;}
+#secondLayout #para2 {grid-area:p1;}
+#secondLayout #para3 {grid-area:p1;}
+#secondLayout #para4 {grid-area:p1;}
+#secondLayout #para5 {grid-area:p1;}
+#secondLayout #para6 {grid-area:p1;}
+#secondLayout #para7 {grid-area:p1;}
+#secondLayout #para8 {grid-area:p1;}
+#secondLayout #para9 {grid-area:p1;}
+#secondLayout #para10 {grid-area:p1;}
+#secondLayout #para11 {grid-area:p1;}
+#secondLayout #para12 {grid-area:p1;}

@@ -36,6 +36,10 @@ p.callout {
 }
 
 #row1,
-#row3 {
-    margin-left: calc(100% *1 / 6);
+#row3,
+#row4,
+#row6,
+#row10,
+#row11, {
+    margin-left: calc(100% *2 / 6);
 }

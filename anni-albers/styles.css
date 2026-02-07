@@ -44,3 +44,10 @@ p.callout {
 #row11{
     margin-left: calc(100% *1 / 6);
 }
+
+#row2,
+#row5,
+#row7,
+#row9{
+max-width: 50%;
+}

@@ -91,3 +91,7 @@ grid-template-areas:
 #secondLayout p {
 width:100%;
 }
+
+#secondLayout #callout1 {
+    padding-left: 0;
+}

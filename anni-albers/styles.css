@@ -61,11 +61,11 @@ grid-template-areas:
 'p5 p5 . . c2 c2'
 '. p6 p6 . . .'
 'p7 p7 . . c3 c3'
-'p8 p8 . . . .'
+'. p8 p8 . . .'
 'p9 p9 . . c4 c4'
-'p10 p10 . . . .'
-'p11 p11 . . . .'
-'p12 p12 . . . .';
+'. p10 p10 . . .'
+'. . p11 p11 . .'
+'. p12 p12 . . .';
 }
 
 /* assigning grid area names to DOM elements */

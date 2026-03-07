@@ -25,7 +25,17 @@
       <h1>Code Log 5: Images</h1>
     <h2>Images </h2>
 
-	<!-- HTML elements here -->
-
+<textarea cols="100" rows="6">
+  Presenting an image with an HTML <img> tag and presenting it as a CSS background-image differ in both purpose and behavior. The <img> tag is used for meaningful, semantic content that belongs in the document flow, and it carries intrinsic dimensions that affect layout. It can be indexed by search engines, announced by screen readers, and described with alt text, making it the correct choice when the image conveys information. In contrast, a background-image is purely decorative and does not contribute to the semantic structure of the page. It never affects layout because the element’s box defines the display area. While <img> supports responsive features like srcset, lazy loading, and object-fit, background images rely on CSS properties such as background-size, background-position, and background-repeat for control. This makes them ideal for aesthetic purposes like hero banners, textures, or layered visual effects, especially when text needs to sit cleanly on top. Ultimately, <img> is for content images that matter to users and assistive technologies, while background-image is for styling and decoration where the image should not be treated as part of the page’s meaningful content.
+  </textarea>
+  <textarea cols="100" rows="6">
+ Two other key CSS properties that influence how a background image appears are background-size and background-position. The background-size property controls how large the background image appears within its container, allowing you to scale the image to fully cover the element, fit entirely within it, or use specific dimensions. Meanwhile, the background-position property determines where the image is placed inside the element, letting you anchor it to positions like the center, top, or left, or use precise percentage or pixel values to control exactly which part of the image remains visible. Together, these properties shape both the scale and placement of a background image, making them essential for achieving responsive and visually intentional layouts.
+</textarea>
+<textarea cols="100" rows="6">
+     Dimensions describe the physical pixel width and height of a bitmap image, while resolution describes how densely those pixels are packed when the image is displayed or printed.
+</textarea>
+<textarea cols="100" rows="6">
+GIF, PNG, JPEG, WebP, and SVG are all image formats used on the web, but they differ in how they compress data, support transparency, handle animation, and suit different types of graphics. GIF uses lossless compression with a limited 256‑color palette and supports simple animations, making it useful for low‑color animated graphics but poor for detailed images. PNG also uses lossless compression but supports full alpha transparency, which makes it ideal for crisp graphics, logos, and screenshots, though its file sizes are larger for photographs. JPEG uses lossy compression optimized for photos, producing small files for complex, continuous‑tone images but offering no transparency and sometimes visible compression artifacts. WebP is a modern format that supports both lossy and lossless compression, transparency, and animation, usually producing smaller files than PNG or JPEG while maintaining similar quality, which makes it versatile for most web uses. SVG is a vector format that stores shapes mathematically rather than as pixels, allowing infinite scalability and tiny file sizes for icons, logos, and illustrations, though it is not suitable for photographs.
+</textarea>
 </body>
 </html>

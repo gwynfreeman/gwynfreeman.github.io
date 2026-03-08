@@ -1,6 +1,9 @@
 /* ------------------------------
    Base Mobile Styles (Mobile First)
 ---------------------------------- */
+body {
+    color: black;
+}
 
 :root {
     --text-dark: #000000;

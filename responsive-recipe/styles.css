@@ -59,10 +59,12 @@ body {
   object-position: top; 
 }
 .hero-media {
-  width: 50%;        /* matches the image width */
-  margin: 0 auto;    /* centers the whole block */
-  text-align: left;  /* or center, depending on Figma */
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left; 
 }
+
 
 .meta {
   margin-top: 0.5rem;

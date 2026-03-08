@@ -44,18 +44,21 @@ body {
     margin: 1rem 0;
 }
 .crop-top {
-  width: 50%;
-  height: 25%;       
+  width: 50%;          
+  height: 50px;        
   overflow: hidden;
+  border-radius: var(--radius);
+  margin: 1rem 0;
 }
-
-
 
 .crop-top img {
   width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
+  object-position: top; 
 }
+
 
 .description {
     font-size: 1rem;

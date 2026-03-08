@@ -1,115 +1,48 @@
 /* ------------------------------
    Base Mobile Styles (Mobile First)
 ---------------------------------- */
-body {
-    color: black;
+.mobile-two-col {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  gap: 1rem; /* space between columns */
 }
 
-:root {
-    --text-dark: #000000;
-    --text-light: #000000;
-    --accent: #000000; 
-    --spacing: 1.25rem;
-    --max-width: 650px;
-    --radius: 8px;
-    font-family: system-ui, sans-serif;
+/* Left column */
+.left-col {
+  width: 50%;
+  text-align: left;
 }
 
-body {
-    margin: 0;
-    color: var(--text-dark);
-    background: #ffffff;
-    line-height: 1.6;
+/* Right column */
+.right-col {
+  width: 50%;
+  text-align: left;
 }
 
-
-
-.hero {
-    text-align: left;
-    padding: var(--spacing);
-    max-width: var(--max-width);
-    margin: 0 auto;
-}
-
-.hero h1 {
-    width: 100%;
-    font-size: 2rem;
-    margin-bottom: 0.75rem;
-}
-
-.hero-img {
-    width: 50%;
-    height: auto;
-    border-radius: var(--radius);
-    margin: 1rem 0;
-}
+/* Crop image */
 .crop-top {
-  width: 50%;          
-  height: 200px;        
+  width: 100%;
+  height: 200px;
   overflow: hidden;
   border-radius: var(--radius);
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 }
 
 .crop-top img {
   width: 100%;
   height: 100%;
-  display: block;
   object-fit: cover;
-  object-position: top; 
-}
-.hero-media {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left; 
+  object-position: top;
+  display: block;
 }
 
-
-.meta {
-  margin-top: 0.5rem;
-}
-
-.meta p {
+/* Yield + time spacing */
+.yield,
+.time {
   margin: 0.25rem 0;
-}
-
-
-
-.description {
-    font-size: 1rem;
-    color: var(--text-light);
-    margin: 0 auto;
-    max-width: 90%;
-}
-
-
-
-main {
-    padding: var(--spacing);
-    max-width: var(--max-width);
-    margin: 0 auto;
-}
-
-section {
-    margin-bottom: 2rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid #ffffff;
-}
-
-h2 {
-    font-size: 1.4rem;
-    margin-bottom: 0.75rem;
-    color: var(--accent);
-}
-
-
-ul, ol {
-    padding-left: 1.25rem;
-}
-
-li {
-    margin-bottom: 0.5rem;
 }
 
 

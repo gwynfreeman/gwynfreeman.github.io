@@ -104,22 +104,7 @@ body {
   object-position: top;
   display: block;
 }
-/* MOBILE ORDERING */
-.image-col {
-  order: 1;
-}
 
-.meta-col {
-  order: 2;
-}
-
-.ingredients-col {
-  order: 3;
-}
-
-.directions-col {
-  order: 2; /* <-- moves directions into the right column on mobile */
-}
 
 /* Footer */
 footer {
@@ -153,7 +138,12 @@ footer a {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 1.5rem;
-    max-width: 1100px;
+
+    /* FIXES */
+    max-width: 1100px;   /* overrides mobile 650px */
+    width: 100%;         /* ensures full expansion */
+    padding: 0 1rem;     /* optional but improves spacing */
+    margin: 0 auto;      /* keeps it centered */
   }
 
   .image-col {
@@ -172,7 +162,6 @@ footer a {
     grid-column: 1 / span 6;
   }
 }
-
 footer {
     text-align: center;
     padding: 1.5rem;

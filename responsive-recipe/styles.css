@@ -58,6 +58,17 @@ body {
   object-fit: cover;
   object-position: top; 
 }
+.meta {
+  width: 50%;              /* match the image width */
+  margin: 0 auto;          /* center it under the image */
+  text-align: left;        
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.meta p {
+  margin: 0.25rem 0;       /* tight spacing like Figma */
+}
 
 
 .description {

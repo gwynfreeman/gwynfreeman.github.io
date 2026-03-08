@@ -58,17 +58,20 @@ body {
   object-fit: cover;
   object-position: top; 
 }
+.hero-media {
+  width: 50%;        /* matches the image width */
+  margin: 0 auto;    /* centers the whole block */
+  text-align: left;  /* or center, depending on Figma */
+}
+
 .meta {
-  width: 50%;              /* match the image width */
-  margin: 0 auto;          /* center it under the image */
-  text-align: left;        
-  font-size: 0.9rem;
-  line-height: 1.4;
+  margin-top: 0.5rem;
 }
 
 .meta p {
-  margin: 0.25rem 0;       /* tight spacing like Figma */
+  margin: 0.25rem 0;
 }
+
 
 
 .description {

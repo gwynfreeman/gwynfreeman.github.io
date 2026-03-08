@@ -1,1 +1,97 @@
+/* ------------------------------
+   Base Mobile Styles (Mobile First)
+---------------------------------- */
 
+:root {
+    --text-dark: #222;
+    --text-light: #555;
+    --accent: #c47a3a; /* optional warm cookie color */
+    --spacing: 1.25rem;
+    --max-width: 650px;
+    --radius: 8px;
+    font-family: system-ui, sans-serif;
+}
+
+body {
+    margin: 0;
+    color: var(--text-dark);
+    background: #faf7f3;
+    line-height: 1.6;
+}
+
+/* ------------------------------
+   Header / Hero
+---------------------------------- */
+
+.hero {
+    text-align: center;
+    padding: var(--spacing);
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    margin: 1rem 0;
+}
+
+.description {
+    font-size: 1rem;
+    color: var(--text-light);
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+/* ------------------------------
+   Sections
+---------------------------------- */
+
+main {
+    padding: var(--spacing);
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+    color: var(--accent);
+}
+
+/* Ingredient + Direction lists */
+ul, ol {
+    padding-left: 1.25rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* ------------------------------
+   Footer
+---------------------------------- */
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+
+footer a {
+    color: var(--accent);
+    text-decoration: none;
+}

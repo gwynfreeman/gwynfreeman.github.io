@@ -45,7 +45,7 @@ body {
 }
 .crop-top {
   width: 50%;          
-  height: 100px;        
+  height: 200px;        
   overflow: hidden;
   border-radius: var(--radius);
   margin: 1rem 0;

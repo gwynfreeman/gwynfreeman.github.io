@@ -161,6 +161,17 @@ footer a {
   .directions-col {
     grid-column: 1 / span 6;
   }
+    .crop-top {
+    height: auto;        /* remove forced crop */
+    overflow: visible;   /* show full image */
+  }
+
+  .crop-top img {
+    height: auto;        /* natural aspect ratio */
+    object-fit: contain; /* or cover, depending on your preference */
+    object-position: center;
+  }
+
 }
 footer {
     text-align: center;

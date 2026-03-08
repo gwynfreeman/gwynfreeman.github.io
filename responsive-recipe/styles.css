@@ -91,6 +91,22 @@ body {
   object-position: top;
   display: block;
 }
+/* MOBILE ORDERING */
+.image-col {
+  order: 1;
+}
+
+.meta-col {
+  order: 2;
+}
+
+.ingredients-col {
+  order: 3;
+}
+
+.directions-col {
+  order: 2; /* <-- moves directions into the right column on mobile */
+}
 
 /* Footer */
 footer {

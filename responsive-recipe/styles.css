@@ -1,6 +1,41 @@
 /* ------------------------------
    Base Mobile Styles (Mobile First)
 ---------------------------------- */
+
+:root {
+    --text-dark: #000000;
+    --text-light: #000000;
+    --accent: #000000;
+    --spacing: 1.25rem;
+    --max-width: 650px;
+    --radius: 8px;
+    font-family: system-ui, sans-serif;
+}
+
+body {
+    margin: 0;
+    color: var(--text-dark);
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+/* Header */
+.hero {
+    text-align: center;
+    padding: var(--spacing);
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+/* ------------------------------
+   MOBILE 2-COLUMN LAYOUT
+---------------------------------- */
+
 .recipe-grid {
   display: flex;
   flex-wrap: wrap;
@@ -37,6 +72,7 @@
   display: block;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 1.5rem;
@@ -48,7 +84,11 @@ footer a {
     color: var(--accent);
     text-decoration: none;
 }
-/*Desk top CSS*/
+
+/* ------------------------------
+   DESKTOP 6-COLUMN LAYOUT
+---------------------------------- */
+
 @media (min-width: 900px) {
   .recipe-grid {
     display: grid;
@@ -57,22 +97,18 @@ footer a {
     max-width: 1100px;
   }
 
-  /* Image spans columns 1–3 */
   .image-col {
     grid-column: 1 / span 3;
   }
 
-  /* Yield + Time spans column 4 */
   .meta-col {
     grid-column: 4 / span 1;
   }
 
-  /* Ingredients span columns 5–6 */
   .ingredients-col {
     grid-column: 5 / span 2;
   }
 
-  /* Directions full width */
   .directions-col {
     grid-column: 1 / span 6;
   }

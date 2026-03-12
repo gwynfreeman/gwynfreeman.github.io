@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	
+
 	<!-- meta tags and title -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,43 +21,61 @@
 	</script>
 
 </head>
-<body>
-<h1>CSS Media Queries</h1>
-	
-<h2>How does a CSS media query work, and why is it useful?</h2>
-<p>A CSS media query is a conditional rule that tells the browser to apply certain styles only when the device or screen meets specific conditions, such as width, height, orientation, or resolution. In practice, media queries are most commonly used to adjust layouts based on screen width, allowing the browser to switch styles when the viewport becomes smaller or larger. This makes them essential for responsive design because they let developers control how a webpage adapts across phones, tablets, and desktops without creating separate versions of the site. By using media queries, you can intentionally change font sizes, spacing, image behavior, and even entire layout structures so the page remains readable, functional, and visually consistent on any device. Media queries are useful because they give you precise control over how your design responds to different screen sizes and ensure a smooth experience for all users.</p>
 
-<h2>What "media features" are supported by media queries — such as "orientation" or "max-width" — and what do they do?</h2>
-<p><ul>
-	<li>Max-width: applies styles when the viewport width is less than or equal to a specified value. It is commonly used for responsive design to target smaller screens like mobile devices.
-<textarea rows="5" cols="40">Example: @media (max-width: 600px) {
+<body>
+	<h1>CSS Media Queries</h1>
+
+	<h2>How does a CSS media query work, and why is it useful?</h2>
+	<p>A CSS media query is a conditional rule that tells the browser to apply certain styles only when the device or
+		screen meets specific conditions, such as width, height, orientation, or resolution. In practice, media queries
+		are most commonly used to adjust layouts based on screen width, allowing the browser to switch styles when the
+		viewport becomes smaller or larger. This makes them essential for responsive design because they let developers
+		control how a webpage adapts across phones, tablets, and desktops without creating separate versions of the
+		site. By using media queries, you can intentionally change font sizes, spacing, image behavior, and even entire
+		layout structures so the page remains readable, functional, and visually consistent on any device. Media queries
+		are useful because they give you precise control over how your design responds to different screen sizes and
+		ensure a smooth experience for all users.</p>
+
+	<h2>What "media features" are supported by media queries — such as "orientation" or "max-width" — and what do they
+		do?</h2>
+	<p>
+	<ul>
+		<li>Max-width: applies styles when the viewport width is less than or equal to a specified value. It is commonly
+			used for responsive design to target smaller screens like mobile devices.
+			<textarea rows="5" cols="40">Example: @media (max-width: 600px) {
 body {
 font-size: 14px;
 }
 }</textarea>
-</li>
-<li>Min-width: applies styles when the viewport width is greater than or equal to a specified value. It is often used to progressively enhance layouts for larger screens.
-<textarea rows="5" cols="40">Example: @media (min-width: 1024px) {
+		</li>
+		<li>Min-width: applies styles when the viewport width is greater than or equal to a specified value. It is often
+			used to progressively enhance layouts for larger screens.
+			<textarea rows="5" cols="40">Example: @media (min-width: 1024px) {
 body {
 font-size: 18px;
 }
 }</textarea>
-</li>
-<li>Orientation: detects whether a device is in portrait (height greater than width) or landscape (width greater than height) mode. This is useful for adjusting layouts, such as switching from a vertical to a horizontal menu when the device rotates
-<textarea rows="5" cols="40">Example: @media (orientation: landscape) {
+		</li>
+		<li>Orientation: detects whether a device is in portrait (height greater than width) or landscape (width greater
+			than height) mode. This is useful for adjusting layouts, such as switching from a vertical to a horizontal
+			menu when the device rotates
+			<textarea rows="5" cols="40">Example: @media (orientation: landscape) {
 body {
 background-color: lightblue;
 }
 }</textarea>
-</li>
-<li>Resolution: targets devices based on their pixel density, measured in dots per inch (dpi) or dots per centimeter (dpcm). This is useful for serving high-resolution images or adjusting UI elements for retina displays
-<textarea rows="5" cols="40">Example: @media (min-resolution: 192dpi) {
+		</li>
+		<li>Resolution: targets devices based on their pixel density, measured in dots per inch (dpi) or dots per
+			centimeter (dpcm). This is useful for serving high-resolution images or adjusting UI elements for retina
+			displays
+			<textarea rows="5" cols="40">Example: @media (min-resolution: 192dpi) {
 img {
 content: url(high-res-image.png);
 }
 }</textarea>
-</li>
-</ul></p>
+		</li>
+	</ul>
+	</p>
 </body>
-</html>
 
+</html>

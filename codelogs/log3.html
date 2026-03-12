@@ -29,32 +29,32 @@
 <h2>What "media features" are supported by media queries — such as "orientation" or "max-width" — and what do they do?</h2>
 <p><ul>
 	<li>Max-width: applies styles when the viewport width is less than or equal to a specified value. It is commonly used for responsive design to target smaller screens like mobile devices.
-Example: @media (max-width: 600px) {
+<textarea>Example: @media (max-width: 600px) {
 body {
 font-size: 14px;
 }
-}
+}</textarea>
 </li>
 <li>Min-width: applies styles when the viewport width is greater than or equal to a specified value. It is often used to progressively enhance layouts for larger screens.
-Example: @media (min-width: 1024px) {
+<textarea>Example: @media (min-width: 1024px) {
 body {
 font-size: 18px;
 }
-}
+}</textarea>
 </li>
 <li>Orientation: detects whether a device is in portrait (height greater than width) or landscape (width greater than height) mode. This is useful for adjusting layouts, such as switching from a vertical to a horizontal menu when the device rotates
-Example: @media (orientation: landscape) {
+<textarea>Example: @media (orientation: landscape) {
 body {
 background-color: lightblue;
 }
-}
+}</textarea>
 </li>
 <li>Resolution: targets devices based on their pixel density, measured in dots per inch (dpi) or dots per centimeter (dpcm). This is useful for serving high-resolution images or adjusting UI elements for retina displays
-Example: @media (min-resolution: 192dpi) {
+<textarea>Example: @media (min-resolution: 192dpi) {
 img {
 content: url(high-res-image.png);
 }
-}
+}</textarea>
 </li>
 </ul>></p>
 </body>

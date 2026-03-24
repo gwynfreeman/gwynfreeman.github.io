@@ -453,3 +453,6 @@ nav > ul > li > ul > li:hover a {
   }
 }
 
+nav {
+  z-index: 9999;
+}

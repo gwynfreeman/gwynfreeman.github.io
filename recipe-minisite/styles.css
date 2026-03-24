@@ -66,6 +66,7 @@ body {
   row-gap: 1rem;
   width: 100%;
   max-width: 650px;
+    margin-top: 3rem;
   margin: 0 auto;
 }
 
@@ -453,6 +454,3 @@ nav > ul > li > ul > li:hover a {
   }
 }
 
-nav {
-  z-index: 9999;
-}

@@ -328,16 +328,19 @@ nav>ul>li>ul>li:hover a {
         margin: 0;
     }
 
-    nav>ul>li>ul {
-        margin: 0 0.5rem 0.5rem 0;
-        visibility: hidden;
-        position: absolute;
-    }
+/* hide dropdown by default */
+nav>ul>li>ul {
+    margin: 0 0.5rem 0.5rem 0;
+    position: absolute;
+    display: none;
+    background-color: var(--nav-bkgd-color);
+}
 
-    nav>ul>li.clicked>ul {
-        display: block;
-        visibility: visible;
-    }
+/* show dropdown on hover */
+nav>ul>li:hover > ul {
+    display: block;
+}
+
 
     nav>ul>li>ul li {
         margin: 0;

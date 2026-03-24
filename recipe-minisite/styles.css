@@ -310,45 +310,122 @@ nav>ul>li>ul>li:hover a {
 /* ----- MEDIA QUERY for landscape/desktop layout ----- */
 @media screen and (orientation: landscape) {
 
+}
+
+#navBurger {
+    position: relative;
+    display: block;
+    font-size: 2rem;
+    color: var(--nav-text-color);
+    padding: 0.1em 0 0 0.3em;
+    max-height: 2rem;
+}
+
+nav ul {
+    position: relative;
+    background-color: var(--nav-bkgd-color);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+nav.clicked > ul {
+    max-height: 90vh;
+}
+
+nav > ul > li {
+    position: relative; /* important for dropdown positioning */
+    background-color: var(--nav-bkgd-color);
+    display: block;
+    margin: 1rem;
+}
+
+nav > ul > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--nav-text-color);
+}
+
+/* SUBMENU (mobile default: collapsed, opened by .clicked) */
+nav > ul > li > ul {
+    margin: 0 0 0 1rem;
+    background-color: inherit;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+nav > ul > li.clicked > ul {
+    max-height: 90vh;
+}
+
+nav > ul > li > ul > li {
+    padding: 0.5rem 0 0.5rem 0.5rem;
+}
+
+nav > ul > li > ul > li:hover {
+    background-color: var(--nav-hover-bkgd-color);
+}
+
+nav > ul > li > ul > li:hover a {
+    color: var(--nav-hover-text-color);
+}
+
+/* ----- DESKTOP / LANDSCAPE: HOVER DROPDOWN ----- */
+@media screen and (orientation: landscape) {
+
     #navBurger {
         display: none;
     }
 
-    nav>ul {
+    nav > ul {
         overflow: visible;
+        max-height: none; /* always visible on desktop */
     }
 
-    nav>ul>li {
+    nav > ul > li {
         float: left;
         margin: 0.5rem;
     }
 
-    nav>ul>li a {
+    nav > ul > li a {
         padding-right: 0.5rem;
         margin: 0;
     }
 
-/* hide dropdown by default */
-nav>ul>li>ul {
-    margin: 0 0.5rem 0.5rem 0;
-    position: absolute;
-    display: none;
-    background-color: var(--nav-bkgd-color);
-}
+    /* reset submenu for desktop: hide by default, show on hover */
+    nav > ul > li > ul {
+        margin: 0 0.5rem 0.5rem 0;
+        position: absolute;
+        display: none; /* hide */
+        max-height: none; /* no accordion behavior */
+        background-color: var(--nav-bkgd-color);
+    }
 
-/* show dropdown on hover */
-nav>ul>li:hover > ul {
-    display: block;
-}
+    nav > ul > li:hover > ul {
+        display: block; /* show on hover */
+    }
 
-
-    nav>ul>li>ul li {
+    nav > ul > li > ul li {
         margin: 0;
         white-space: nowrap;
     }
 
-    nav>ul>li>a::after {
+    nav > ul > li > a::after {
         content: "";
     }
+}
 
 }

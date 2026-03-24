@@ -433,10 +433,4 @@ nav > ul > li > ul > li:hover a {
   width: auto;
   height: auto;
 }
-.crop-top img.rotate-90 {
-  transform: rotate(90deg);
-  width: auto;        /* don’t stretch horizontally */
-  height: 100%;       /* match the crop box height */
-  object-fit: cover;  /* keep consistent with other images */
-  object-position: center;
-}
+

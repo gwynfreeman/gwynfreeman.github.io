@@ -2,7 +2,6 @@
    GLOBAL VARIABLES
 ---------------------------------- */
 :root {
-  /* site variables */
   --text-dark: #000000;
   --text-light: #000000;
   --accent: #000000;
@@ -27,8 +26,7 @@ body {
   color: var(--text-dark);
   background: #ffffff;
   line-height: 1.6;
-  padding-top: 5rem; /* adjust if needed */
-  
+  padding-top: 5rem;
 }
 
 main {
@@ -129,34 +127,39 @@ nav > ul > li > ul > li:hover a {
 ---------------------------------- */
 @media (min-width: 900px) {
 
+  /* Desktop resets */
+  nav {
+    position: relative;
+    height: auto;
+  }
+
   #navBurger {
     display: none;
   }
 
-  nav {
-    height: auto;
-  }
-
   nav > ul {
     display: flex;
-    max-height: none;
+    max-height: none !important;
+    overflow: visible !important;
     justify-content: center;
   }
 
   nav > ul > li {
     margin: 0;
     padding: 1rem;
+    position: relative;
   }
 
-  /* Hover dropdowns */
+  /* Desktop dropdowns */
   nav > ul > li > ul {
     position: absolute;
     top: 100%;
     left: 0;
     background-color: var(--nav-bkgd-color);
-    max-height: none;
     display: none;
     padding: 0.5rem 0;
+    max-height: none !important;
+    overflow: visible !important;
   }
 
   nav > ul > li:hover > ul {
@@ -197,25 +200,10 @@ nav > ul > li > ul > li:hover a {
   margin-top: 3rem;
 }
 
-.image-col {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.meta-col {
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.ingredients-col {
-  grid-column: 1;
-  grid-row: 3;
-}
-
-.directions-col {
-  grid-column: 2;
-  grid-row: 1 / span 3;
-}
+.image-col { grid-column: 1; grid-row: 1; }
+.meta-col { grid-column: 1; grid-row: 2; }
+.ingredients-col { grid-column: 1; grid-row: 3; }
+.directions-col { grid-column: 2; grid-row: 1 / span 3; }
 
 /* Crop image */
 .crop-top {
@@ -256,21 +244,10 @@ nav > ul > li > ul > li:hover a {
     margin: 0 auto;
   }
 
-  .image-col {
-    grid-column: 1 / span 3;
-  }
-
-  .meta-col {
-    grid-column: 4 / span 1;
-  }
-
-  .ingredients-col {
-    grid-column: 5 / span 2;
-  }
-
-  .directions-col {
-    grid-column: 1 / span 6;
-  }
+  .image-col { grid-column: 1 / span 3; }
+  .meta-col { grid-column: 4 / span 1; }
+  .ingredients-col { grid-column: 5 / span 2; }
+  .directions-col { grid-column: 1 / span 6; }
 
   .crop-top {
     height: auto;
@@ -328,4 +305,3 @@ footer a {
   width: auto;
   height: auto;
 }
-

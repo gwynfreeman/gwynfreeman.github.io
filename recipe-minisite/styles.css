@@ -27,7 +27,8 @@ body {
   color: var(--text-dark);
   background: #ffffff;
   line-height: 1.6;
-  padding-top: var(--nav-height); /* ensures content clears fixed nav */
+  padding-top: 5rem; /* adjust if needed */
+  
 }
 
 main {

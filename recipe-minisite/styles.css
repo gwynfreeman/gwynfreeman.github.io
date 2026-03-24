@@ -383,6 +383,17 @@ nav > ul > li > ul > li:hover a {
     color: var(--nav-hover-text-color);
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+body {
+  padding-top: var(--nav-height);
+}
 
 .rotate-90 {
   transform: rotate(90deg);

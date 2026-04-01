@@ -32,7 +32,7 @@ main {
 }
 
 body.darkMode {
-    background-color: navy;
+    background-color: black;
     color: pink;
 }
 

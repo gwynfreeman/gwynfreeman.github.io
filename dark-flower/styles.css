@@ -27,6 +27,7 @@ main {
     grid-template-columns: 1fr;
     gap: 20px;
 }
+
 #toggleDarkMode {
     margin-top: 2em;
 }

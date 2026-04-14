@@ -6,7 +6,7 @@
 	<!-- meta tags and title -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Page Title</title>
+	<title>Maintain Relationships</title>
 
 	<!-- external and internal CSS -->
 	<link rel="stylesheet" href="styles.css" media="all">
@@ -22,8 +22,15 @@
 
 </head>
 <body>
-
-	<!-- HTML elements here -->
-
+	<h1>Follow Your Heart</h1>
+	<h2>Maintain Relationships</h2>
+<p>
+Unfortunately, you have chosen not to follow your heart. Instead of making friends at work, you chose to maintain relationships
+with your hometown friends. All of your friends decided to follow their hearts and moved out of your hometown. You are stuck in your hometown, and you have no friends. Luckily, you are working your dream job.
+You are a teacher who is helping children love to learn.
+Remember, next time the opportunity arises, it is always important to follow your heart no matter how difficult it may seem. If you would like to try again, you may do so now. 
+	<button onclick="window.location.href='https://gwynfreeman.github.io/follow-your-heart/index.html'">
+  Start Over</button>
+</p>
 </body>
 </html>

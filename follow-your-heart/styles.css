@@ -24,4 +24,6 @@ p{
 button{
     background-color: lightpink;
     color:darkred;
+     width: 200px;
+  height: 50px;
 }

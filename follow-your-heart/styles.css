@@ -2,3 +2,17 @@
     width: 300px;
     height: auto;
 }
+
+body{
+    background-color: lightpink;
+ 
+}
+h1{
+    color:#800020;
+}
+h2{
+       color: darkred;
+}
+p{
+    color:black
+}

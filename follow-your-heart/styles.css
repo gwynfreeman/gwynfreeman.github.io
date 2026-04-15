@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: lightpink;
+    background-color: lightgray;
  
 }
 h1{
@@ -14,10 +14,10 @@ h2{
        color: darkred;
 }
 p{
-    color:black
+    color:black;
 }
 
 button{
-    background-color: hotpink;
-    color:darkred
+    background-color: lightpink;
+    color:darkred;
 }

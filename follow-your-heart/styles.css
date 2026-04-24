@@ -27,3 +27,25 @@ button{
      width: 180px;
   height: 50px;
 }
+.button-image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 buttons, 2 images */
+  grid-template-rows: auto auto; /* row 1 = buttons, row 2 = images */
+  gap: 10px;
+  width: 100%;
+  max-width: 800px; /* optional */
+  margin: 0 auto;   /* centers the whole block */
+}
+
+/* Make buttons fill their grid cells */
+.button-image-grid button {
+  width: 100%;
+  display: block;
+}
+
+/* Make images fill their grid cells */
+.button-image-grid img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}

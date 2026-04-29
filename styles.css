@@ -1,6 +1,10 @@
 body{    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #deb3ad;
-    color:black
+    color:black;
+    margin:auto;
+    padding:0%;
+    width:90%;
+    max-width: 1200px;
 }
 
 h1{

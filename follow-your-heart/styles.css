@@ -26,10 +26,10 @@ nav {
 }
 
 .nav-img {
-  width: 40px;
+  width: auto;
   height: 40px;
-  object-fit: cover;
-  border-radius: 4px;
+  object-fit: containj;
+  flex: shrink 0;
 }
 
 .photo {

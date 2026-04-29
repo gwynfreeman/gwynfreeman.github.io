@@ -1,3 +1,9 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+}
 .home-btn {
   position: fixed;
   top: 15px;
@@ -10,7 +16,22 @@
   border-radius: 6px;
   font-weight: bold;
 }
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
 
+.nav-right h3 {
+  margin: 0;
+}
+
+.nav-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 4px;
+}
 
 
 .photo {

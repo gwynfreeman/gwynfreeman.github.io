@@ -3,12 +3,9 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 12px 20px;
+  flex-wrap: wrap; 
 }
 .home-btn {
-  position: fixed;
-  top: 15px;
-  left: 15px;
-  z-index: 9999;
   padding: 10px 16px;
   background-color: lightpink;
   color: darkred;

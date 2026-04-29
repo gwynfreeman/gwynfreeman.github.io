@@ -40,7 +40,7 @@ nav {
 body {
   background-color: white;
   text-align: center;
-  overflow-x: hidden; /* prevents sideways scrolling */
+  overflow-x: hidden;
 }
 
 h1 {
@@ -96,9 +96,7 @@ img, .photo {
   height: auto;
 }
 
-/* ------------------------------ */
-/* 📱 MOBILE LAYOUT (merged)      */
-/* ------------------------------ */
+
 @media (max-width: 600px) {
 
   nav {
@@ -116,7 +114,7 @@ img, .photo {
   }
 
   .nav-img {
-    width: 30px;
+    width: auto;
     height: 30px;
   }
 

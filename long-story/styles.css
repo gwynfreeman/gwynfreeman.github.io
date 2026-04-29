@@ -3,7 +3,7 @@ section {
 }
 .story-img {
   width: 60%;
-  max-width: 500px;
+  max-width: auto;
   max-height: 750px;
   margin-top: 20px;
   border-radius: 10px;

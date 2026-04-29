@@ -1,11 +1,12 @@
 section {
-  height: 100vh; 
+    height: 100vh;
 }
+
 .story-img {
-  width: 60%;
-  max-width: 500px;
-  max-height: 700px;
-   object-fit: contain;
-  margin-top: 20px;
-  border-radius: 10px;
+    width: 60%;
+    max-width: 500px;
+    max-height: 700px;
+    object-fit: contain;
+    margin-top: 20px;
+    border-radius: 10px;
 }

@@ -3,8 +3,9 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 12px 20px;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
+
 .home-btn {
   padding: 10px 16px;
   background-color: lightpink;
@@ -13,10 +14,11 @@ nav {
   border-radius: 6px;
   font-weight: bold;
 }
+
 .nav-right {
   display: flex;
   align-items: center;
-  gap: 10px; 
+  gap: 10px;
 }
 
 .nav-right h3 {
@@ -30,59 +32,103 @@ nav {
   border-radius: 4px;
 }
 
-
 .photo {
-    width: 300px;
-    height: auto;
+  width: 300px;
+  height: auto;
 }
 
-body{
-    background-color: white;
- text-align: center;
+body {
+  background-color: white;
+  text-align: center;
+  overflow-x: hidden; /* prevents sideways scrolling */
 }
-h1{
-    color:#800020;
 
-    font-size: 3rem;
+h1 {
+  color: #800020;
+  font-size: 3rem;
 }
-h2{
-       color: black;
-       font-size: 2rem;
+
+h2 {
+  color: black;
+  font-size: 2rem;
 }
-h3{
-  color:#800020;
+
+h3 {
+  color: #800020;
   font-size: 1.75rem;
 }
-p{
-    color:grey;
-    font-size: 1.5rem;
+
+p {
+  color: grey;
+  font-size: 1.5rem;
 }
 
-button{
-    background-color: lightpink;
-    color:darkred;
-     width: 180px;
+button {
+  background-color: lightpink;
+  color: darkred;
+  width: 180px;
   height: 50px;
 }
+
 .button-image-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 buttons, 2 images */
-  grid-template-rows: auto auto; /* row 1 = buttons, row 2 = images */
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
   gap: 10px;
   width: 100%;
-  max-width: 800px; /* optional */
-  margin: 0 auto;   /* centers the whole block */
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-/* Make buttons fill their grid cells */
 .button-image-grid button {
   width: 100%;
   display: block;
 }
 
-/* Make images fill their grid cells */
 .button-image-grid img {
   width: 100%;
   display: block;
   object-fit: cover;
+}
+
+img, .photo {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ------------------------------ */
+/* 📱 MOBILE LAYOUT (merged)      */
+/* ------------------------------ */
+@media (max-width: 600px) {
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-right {
+    order: 2;
+  }
+
+  .home-btn {
+    order: 1;
+  }
+
+  .nav-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  .button-image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  button {
+    width: 100%;
+  }
 }

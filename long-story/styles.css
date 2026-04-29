@@ -4,7 +4,7 @@ section {
 .story-img {
   width: 60%;
   max-width: 500px;
-  max-height: 100px;
+  max-height: 500px;
   margin-top: 20px;
   border-radius: 10px;
 }

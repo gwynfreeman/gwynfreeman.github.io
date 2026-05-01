@@ -91,7 +91,8 @@ button {
   object-fit: cover;
 }
 
-img, .photo {
+img,
+.photo {
   max-width: 100%;
   height: auto;
 }
